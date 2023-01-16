@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: azure;
+
+}
+
+footer{
+    padding: 12px;
+    display: flex;
+    background-color: rgb(9, 81, 153);
+    color: white;
+    justify-content: center;
+    
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+
+
+input[type=text] {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: white;
+    border: 1px solid dodgerblue;
+    border-radius: 8px;
+    padding: 15px;
+    height: 20px;
+    width: 800px;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+input[type=number]{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: white;
+    border: 1px solid dodgerblue;
+    border-radius: 8px;
+    padding: 15px;
+    height: 20px;
+    width: 150px;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+input[type=checkbox]{
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+p,h1, h2, h3, label, .label {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.head_bar {
+    padding: 12px;
+    display: flex;
+    background-color: dodgerblue;
+    color: white;
+    justify-content: center;
+
+}
+
+.inner,.shadow {
+    border-radius: 20px;
+}
+
+.input_section>form>button>bookSubmit {
+    background: linear-gradient(-45deg, rgba(43, 81, 112), rgb(0, 61, 192));
+    color: white;
+    border: 2px black solid;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    padding: 12px;
+    flex-direction: column;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.submit-btn, .search-btn {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.footer-text{
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    margin-left: 110px;
+}
+
+.status {
+    margin-top: 30px;
+    margin-left: 0px;
+}
+
+.check-btn {
+    background: url('../img/check-btn.png');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    padding-top: 10px;
+    cursor: pointer;
+    border: none;
+    display :table-column;
+}
+
+
+.remove-btn{
+    background: url('../img/remove-btn.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    border: none;
+}
+
+
+
+.undo-btn{
+    background: url('../img/undo-btn.png');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+
+.container{
+    background-size: contain;
+}
+
+.shadow {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+

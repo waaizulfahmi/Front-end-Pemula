@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/check-btn.png" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    </style>
+    <title>Bookshelf Apps</title>
+</head>
+
+<body>
+    <header class="text-center head_bar mb-2">
+        <h1>Bookshelf Apps</h1>
+    </header>
+
+
+<main>
+    <section class="input_section">
+        <div class="container">
+            <h2 class="mb-5 ">Masukan Buku Baru</h2>
+            <form id="inputBook">
+                <div class="row mb-3">
+                    <label for="inputBookTitle" class="col-sm-2 col-form-label">Judul</label>
+                    <div class="col-sm-10">
+                        <input id="inputBookTitle" class="form-control shadow label" type="text" placeholder="Judul Buku.." required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="inputBookAuthor" class="col-sm-2 col-form-label">Penulis</label>
+                    <div class="col-sm-10">
+                        <input id="inputBookAuthor" class="form-control shadow label" type="text" placeholder="Nama Penulis.." required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="inputBookYear" class="col-sm-2 col-form-label">Tahun</label>
+                    <div class="col-sm-10">
+                        <input id="inputBookYear" class="form-control shadow label" type="number" placeholder="Tahun Terbit.." required> </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-10">
+                        <label for="inputBookIsComplete" class="col-sm-2 col-form-label">Selesai dibaca</label>
+                        <input class="form-check-input" id="inputBookIsComplete" type="checkbox">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-2"> </label>
+                    <div class="col-sm-10">
+                        <button id="bookSubmit" type="submit" class="submit-btn label">Masukkan buku kedalam rak <span>&nbsp <strong>Belum Selesai Dibaca</strong> </span></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <section class="search_section">
+        <div class="container">
+            <hr>
+            <h2 class="mb-5">Cari Buku </h2>
+            <form id="searchBook">
+                <div class="row mb-3">
+                    <label for="searchBookTitle" class="col-sm-2 col-form-label">Judul</label>
+                    <div class="col-sm-10">
+                        <input id="searchBookTitle" type="text" class="input shadow label" placeholder="Cari Buku Disini..." required>
+                        <button id="searchSubmit" type="submit" class="search-btn label">Cari</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div class="container status">
+        <section class="book_shelf">
+            <h2 class="mb-5">Belum Dibaca</h2>
+            <div id="incompleteBookshelfList" class="book_list"></div>
+        </section>
+        <hr>
+    </div>
+    <div class="container status">
+        <section class="book_shelf">
+            <h2>Selesai Dibaca</h2>
+            <div id="completeBookshelfList" class="book_list"></div>   
+        </section>
+    </div>
+        
+</main>
+<script src="assets/js/script.js"></script>
+<footer>
+    <div>
+        <h3>Subsmission Pemula Front-End Dicoding</h3>
+        <h5 class="footer-text">Wanda Aizul Fahmi - 2022</h5>
+    </div>
+</footer>
+</body>
+
+</html>
